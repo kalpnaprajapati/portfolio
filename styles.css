@@ -1,0 +1,498 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.brand {
+    color: #f9fbfc; /* Stylish Gold */
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+#bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;   
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    z-index: 1000; /* Ensures navbar stays above other sections */
+    transition: top 0.3s ease-in-out;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: rgba(169, 236, 246, 0.8);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    background-color: #0c5865; /* Stylish button color */
+    color: #9cf0ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background-color: rgb(78, 8, 106);
+    color: #e894de;
+    transform: scale(1.1);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    border: 5px solid #8552cc; /* Neon Blue Border */
+    box-shadow: 0px 0px 20px #8552cc; /* Neon Glow Effect */
+    transition: 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1); /* Pop effect on hover */
+}
+
+
+@keyframes pop {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.hello {
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 40%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+
+section {
+    margin: 100px 0;
+}
+
+#career-objective {
+    background: linear-gradient(135deg, #74bcec, #0a4e54);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: 20px auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#career-objective h2 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#career-objective p {
+    font-size: 28px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Hover Effect */
+#career-objective:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    cursor: pointer;
+}
+
+.resume-button {
+    display: block;
+    margin: 20px auto;
+    background: #044959; /* Stylish gradient */
+    color: rgb(164, 252, 240);
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer; /* Ensures hover cursor */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resume-button:hover {
+    background: linear-gradient(135deg, #500973, #fb78ec); /* Color shift */
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+section {
+    margin: 200px 0;
+}
+
+.education-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff; /* Matching blue shade */
+    text-shadow: 2px 2px 5px rgba(183, 155, 254, 0.3);
+    border-bottom: 3px solid #adcff6;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #052f42, #138a95);
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #71e1f0; 
+}
+
+.education-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0px 0px 20px #71e1f0; 
+}
+
+.edu-details p {
+    font-size: 18px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.edu-details strong {
+    color: #def7f8; /* Gold text for key info */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#projects h2, #experience h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff; /* Matching blue shade */
+    text-shadow: 2px 2px 5px rgba(183, 155, 254, 0.3);
+    border-bottom: 3px solid #adcff6;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.project-tile {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background: linear-gradient(135deg, #46cbf0, #044959);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+.project-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.project-details {
+    flex-grow: 1;
+}
+
+.project-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: #4a90e2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.project-link:hover {
+    background: #4a90e2; /* Changes color on hover */
+    transform: scale(1.1); /* Slight zoom-in effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds shadow */
+}
+
+
+.project-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project, .education-item {
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.project:hover, .education-item:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.experience-tile {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background: linear-gradient(135deg, #46cbf0, #044959);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.experience-details {
+    flex-grow: 1;
+}
+
+.certificate-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background: #4a90e2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.certificate-link:hover {
+    background: #3b6fc4;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.experience-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#curriculum h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff; /* Matching blue shade */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #8db2dc;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+.curriculum-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.curriculum-tile {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background: linear-gradient(135deg, #9cf0ff, #074461);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+.activity-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.activity-details {
+    flex-grow: 1;
+}
+
+.certificate-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background: #044959;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.certificate-link:hover {
+    background: #138a95;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.curriculum-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contact h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4a90e2; /* Matching professional blue shade */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #4a90e2;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #4a90e2, #7b61ff);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.contact-info p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffb3b3;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: white;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #ffb3b3;
+}
+
