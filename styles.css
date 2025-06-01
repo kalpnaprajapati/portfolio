@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+    /* Styles for tablets */
+}
+@media (max-width: 480px) {
+    /* Styles for mobile screens */
+}
 html {
     scroll-behavior: smooth;
 }
